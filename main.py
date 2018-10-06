@@ -12,11 +12,6 @@ import socket
 from network import Bluetooth
 
 class Main:
-    INITIALISING = 0
-    CONFIGURING = 1
-    UPDATING = 2
-    PRODUCTION = 3
-
     def __init__(self):
         self.toggleList = None
         self.data = Data()
@@ -24,7 +19,7 @@ class Main:
         self.pycom = pycom
 
         self.running = True
-        self.ble = BLEConfig(self.data,self)
+        self.ble = ConfigureBluetooth(self.data,self)
 
         self.nodeName = ''
         self.connectionFailed = False
