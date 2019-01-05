@@ -1,0 +1,6 @@
+{
+  "appId": "com.delanopro.rd64piano",
+  "appName": "RD64 BLE Client",
+  "bundledWebRuntime": false,
+  "webDir": "dist"
+}
